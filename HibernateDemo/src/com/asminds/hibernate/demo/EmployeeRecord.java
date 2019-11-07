@@ -22,10 +22,11 @@ public class EmployeeRecord {
 		con.configure("hibernate.cfg.xml");
 		SessionFactory sesfac=con.buildSessionFactory();
 		Session ses=sesfac.openSession();
+		ses.load(Employee.class,new Float(101));
 		Criteria crit = ses.createCriteria(Employee.class);
 		
-		ProjectionList projList = Projections.projectionList();
-		projList.add(Projections.max("salary"));
+	//  ProjectionList projList = Projections.projectionList();
+	//  projList.add(Projections.max("salary"));
 	//	projList.add(Projections.min("salary"));
 	//	projList.add(Projections.avg("salary"));
 	//	projList.add(Projections.countDistinct("empname"));
