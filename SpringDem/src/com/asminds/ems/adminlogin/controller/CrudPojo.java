@@ -7,7 +7,6 @@ import javax.persistence.Id;
 @Entity
 public class CrudPojo {	
 	@Id
-	@GeneratedValue
 	private int stuid;
 	private String stuname;
 	private String stuaddress;
