@@ -31,11 +31,11 @@ public class EmployeeDetails {
 		    //System.out.println(hare); 
 		
 		
-/*Map<String, Long> e =emp.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.counting()));   //count of genders
-System.out.println(e);*/
+/*Map<String, Long> e =emp.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.counting()));   
+System.out.println(e);*/				//count of genders
 
-/*Map<String, Double> e =emp.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.averagingInt(Employee::getAge)));   //avg of age
-System.out.println(e);*/
+/*Map<String, Double> e =emp.stream().collect(Collectors.groupingBy(Employee::getGender,Collectors.averagingInt(Employee::getAge)));   
+System.out.println(e);*/				//avg of age
 
 /*emp.stream().map(Employee::getDepartment).distinct().forEach(System.out::println);*/ //prints only dept
 		

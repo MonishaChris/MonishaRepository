@@ -5,14 +5,6 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 	@Controller
 	public class AdminLoginController {
-
-		@RequestMapping("/")
-		public String indexMethod() {
-			System.out.println(" Im in Index page");
-
-			return "index";
-
-		}
 		@RequestMapping("/login")
 		public String index() {
 			System.out.println(" Im in Index page");
