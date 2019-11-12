@@ -17,8 +17,8 @@
 					<th>Name</th>
 					<th>Address</th>
 				</tr>
-				<c:if test="${not empty maria}">
-		<c:forEach var="n" items="${maria}">
+				<c:if test="${not empty Monisha}">
+		<c:forEach var="n" items="${Monisha}">
 				<tr>
 					<td><c:out value="${n.stuid}" /></td>
 					<td><c:out value="${n.stuname}" /></td>

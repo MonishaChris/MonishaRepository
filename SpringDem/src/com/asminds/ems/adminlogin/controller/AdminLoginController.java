@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
-public class AdminLoginController {
-	
+public class AdminLoginController {	
 	
 	@RequestMapping("/login")
 	public String index() {
