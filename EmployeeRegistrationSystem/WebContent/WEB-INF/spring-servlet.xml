@@ -8,7 +8,7 @@
    http://www.springframework.org/schema/context/spring-context-3.0.xsd">
 
    <context:component-scan base-package = "com.asminds.ems.adminlogin.controller" />
-
+<!-- <context:component-scan base-package = "com.asminds.ems.adminlogin.controller.EmployeeDaoImpl" /> -->
    <bean class = "org.springframework.web.servlet.view.InternalResourceViewResolver">
       <property name = "prefix" value = "/WEB-INF/view/" />
       <property name = "suffix" value = ".jsp" />

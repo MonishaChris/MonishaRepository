@@ -3,6 +3,7 @@ package com.asminds.ems.adminlogin.controller;
 import java.util.Iterator;
 import java.util.List;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,9 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class EmployeeController {
+	
+	@Autowired
+	EmployeeDaoImpl t;
 	
 	@RequestMapping("/login")
 	public String index() {
@@ -35,7 +39,7 @@ public class EmployeeController {
 	@RequestMapping("/Insert")
 	public String insert( EmployeePojo s) {
 		EmployeeDaoImpl l=new EmployeeDaoImpl();
-	boolean n=	l.insert(s);
+	boolean n=	t.insert(s);
 	System.out.println("I am in Insert method");
 	if(n==true) {
 		return "home";
@@ -49,7 +53,7 @@ public class EmployeeController {
 	@RequestMapping("/delete")
 	public String Delete(@ModelAttribute("s") EmployeePojo a) {
 		EmployeeDaoImpl l = new EmployeeDaoImpl();
-		boolean n = l.delete(a.getEmpid());
+		boolean n = t.delete(a.getEmpid());
 		System.out.println("I am in Delete method");
 		if (n == true) {
 			return "home";

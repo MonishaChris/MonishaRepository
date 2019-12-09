@@ -11,6 +11,7 @@
 Welcome to hospital management system...!!!
 <br>
 <br>
+<a href=About>About</a>
 <br>
 <a href="login">Login</a>
 </center>
